@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>OneMoreVolume</title>
+</head>
+<body>
+    <header>
+            <h1>OMV</h1>
+    </header>
+    
+    <main>
+        <section class="screen" id="reading">
+            <div class = "posts">
+                <article>
+                    <h3>Welcome</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, reiciendis aperiam voluptas harum nesciunt itaque enim vero soluta provident ratione fugiat doloribus optio eos id. Molestiae nisi rerum quisquam similique!</p>
+                </article>
+                <article>
+                    <h3>News and Updates</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, reiciendis aperiam voluptas harum nesciunt itaque enim vero soluta provident ratione fugiat doloribus optio eos id. Molestiae nisi rerum quisquam similique!</p>
+                </article>
+                <article>
+                    <h3>Contact</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, reiciendis aperiam voluptas harum nesciunt itaque enim vero soluta provident ratione fugiat doloribus optio eos id. Molestiae nisi rerum quisquam similique!</p>
+                </article>
+                <button id="authorisationButton" onclick="userAuthorisation()">Log in</button>
+            </div>
+        </section>
+
+        <section class="screen" id="collection">
+            <div class="collectionItem">
+                <img class="itemImage"src="covercb.jpg" alt="manga cover">
+                <article>
+                    <h3 class="itemTitle">20th Century Boys</h3>
+                    <p class="itemAuthor">Naoki Urasawa</p>
+                </article>
+                <article>
+                    <p class="itemVolumeCount">Amount of volumes</p>
+                    <input type="number" class="volumeCountInput" id="firstInput" value="0">
+                    <p class="itemVolumeCount">Volumes read</p>
+                    <p class="volumesRead" id="firstVolumeCount">0</p>
+                </article>
+                <button class="submitButton" onclick="submitVolumeCount()">Submit</button>
+            </div>
+
+            <div class="collectionItem">
+                <img class="itemImage"src="coverph.jpg" alt="manga cover">
+                <article>
+                    <h3 class="itemTitle">Pandora Hearts</h3>
+                    <p class="itemAuthor">Mochizuki Jun</p>
+                </article>
+                <article>
+                    <p class="itemVolumeCount">Amount of volumes</p>
+                    <input type="number" class="volumeCountInput" value="0">
+                </article>
+                <button class="submitButton">Submit</button>
+            </div>
+            
+            <div class="collectionItem">
+                <img class="itemImage"src="coverbz.jpg" alt="manga cover">
+                <article>
+                    <h3 class="itemTitle">Berserk</h3>
+                    <p class="itemAuthor">Kentaro Miura</p>
+                </article>
+                <article>
+                    <p class="itemVolumeCount">Amount of volumes</p>
+                    <input type="number" class="volumeCountInput"value="0">
+                </article>
+                <button class="submitButton">Submit</button>
+            </div>
+        </section>
+
+        <section class="screen" id="search">C</section>
+    </main>
+
+    <nav>
+        <section class="navBar">
+            <a href="#" class="navButton active">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px"><path d="M0 0h24v24H0z" fill="none"/><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+
+                <p>READING</p>
+            </a>
+            <a href="#" class="navButton">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
+
+                <p>COLLECTION</p>
+            </a>
+            <a href="#" class="navButton">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+
+                <p>SEARCH</p>
+            </a>
+        </section>
+    </nav>
+    <script src="./js/main.js"></script>
+    <script src="./service-worker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

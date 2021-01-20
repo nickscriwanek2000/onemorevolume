@@ -1,0 +1,74 @@
+* {
+  background: #673ab7;
+}
+
+.pages {
+  scroll-snap-type: y mandatory;
+}
+
+.page {
+  scroll-snap-align: start;
+  z-index: 0;
+}
+
+.tabsCont {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+.tabs-content.carousel.carousel-slider {
+  height: auto !important;
+}
+
+.tabs-content.carousel.carousel-slider .carousel-item.active {
+  position: relative;
+}
+
+.kemicofa-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: stretch;
+}
+
+.kemicofa-row>* {
+  flex-basis: 20rem;
+  flex-shrink: 0;
+}
+
+.kemicofa-row .card {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.kemicofa-row .card>.card-content {
+  flex-grow: 1;
+}
+
+.kemicofa-row .card>.card-image {
+  flex-basis: 25rem;
+  flex-shrink: 0;
+  overflow-y: hidden;
+  background-color: grey;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.card--visible-overflow {
+  overflow: visible !important;
+}
+
+#test2 {
+  max-height: 100vh;
+}
+
+#barcode-scanner {
+  max-width: 70%;
+  min-height: 70%;
+}

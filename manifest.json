@@ -1,0 +1,30 @@
+{
+  "name": "OneMoreVolume",
+  "short_name": "OMV",
+  "theme_color": "#673ab7",
+  "background_color": "#673ab7",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/onemorevolume/",
+  "start_url": "/onemorevolume/index.html",
+  "web_accessible_resources": [
+    "images/*.png",
+    "style/materialize.min.css",
+    "style/tabstyle.css",
+    "script/materialize.min.js",
+    "script/quagga.min.js",
+    "script//bmnlcjabgnpnenekpadlanbbkooimhnj/h0.js",
+    "script/index.js",
+    "script/sw.js",
+    "script/jikanv1.js",
+    "script/main.js",
+    "script/quaggascript.js"
+  ],
+  "icons": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/en/7/71/Bvckup_2_-_Application_icon_-_256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
